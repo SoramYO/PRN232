@@ -1,0 +1,35 @@
+docker-compose up -d 
+dotnet ef database update
+Create database MyStore
+go 
+use MyStore
+go
+create table AccountMember
+(
+    MemberID       nvarchar(20)  not null
+        primary key,
+    MemberPassword nvarchar(80)  not null,
+    FullName       nvarchar(80)  not null,
+    EmailAddress   nvarchar(100) not null,
+    MemberRole     int           not null
+)
+go
+
+create table Categories
+(
+    CategoryID   int          not null
+        primary key,
+    CategoryName nvarchar(15) not null
+)
+go
+
+create table Products
+(
+    ProductID    int          not null
+        primary key,
+    ProductName  nvarchar(40) not null,
+    CategoryID   int          not null,
+    UnitsInStock smallint,
+    UnitPrice    money,
+    FOREIGN KEY (CategoryID) REFERENCES Categories(CategoryID)
+)
