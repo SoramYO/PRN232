@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRN232.Lab3.CosmeticsStore.API", "PRN232.Lab3.CosmeticsStore.API\PRN232.Lab3.CosmeticsStore.API.csproj", "{7A817140-91BC-4378-9E6E-BE9E0E1A8C04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRN232.Lab3.CosmeticsStore.Service", "PRN232.Lab3.CosmeticsStore.Service\PRN232.Lab3.CosmeticsStore.Service.csproj", "{8EBFE061-C572-4E68-9C0D-6550D2A6BEF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRN232.Lab3.CosmeticsStore.Repository", "PRN232.Lab3.CosmeticsStore.Repository\PRN232.Lab3.CosmeticsStore.Repository.csproj", "{D4C24C1C-258C-4620-A2B6-08168F5F1B9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A817140-91BC-4378-9E6E-BE9E0E1A8C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A817140-91BC-4378-9E6E-BE9E0E1A8C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A817140-91BC-4378-9E6E-BE9E0E1A8C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A817140-91BC-4378-9E6E-BE9E0E1A8C04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EBFE061-C572-4E68-9C0D-6550D2A6BEF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EBFE061-C572-4E68-9C0D-6550D2A6BEF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EBFE061-C572-4E68-9C0D-6550D2A6BEF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EBFE061-C572-4E68-9C0D-6550D2A6BEF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4C24C1C-258C-4620-A2B6-08168F5F1B9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C24C1C-258C-4620-A2B6-08168F5F1B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C24C1C-258C-4620-A2B6-08168F5F1B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C24C1C-258C-4620-A2B6-08168F5F1B9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A40D69D-12D9-4B31-9C3B-DFD7B1F2EAD5}
+	EndGlobalSection
+EndGlobal

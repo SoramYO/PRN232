@@ -1,0 +1,31 @@
+create database CosmeticsDB
+go 
+use CosmeticsDB
+go
+CREATE TABLE SystemAccount (
+    AccountID       UNIQUEIDENTIFIER PRIMARY KEY,
+    AccountNote     NVARCHAR(240),
+    AccountPassword NVARCHAR(100),
+    EmailAddress    NVARCHAR(100) UNIQUE
+    Role            NVARCHAR(40)
+);
+
+go
+CREATE TABLE CosmeticCategory (
+    CategoryID      NVARCHAR(30) PRIMARY KEY,
+    CategoryName    NVARCHAR(120),
+    FormulationType NVARCHAR(250),
+    UsagePurpose    NVARCHAR(250)
+);
+go
+CREATE TABLE CosmeticInformation (
+    CosmeticID     NVARCHAR(30) PRIMARY KEY,
+    CategoryID     NVARCHAR(30),
+    CosmeticName   NVARCHAR(160),
+    CosmeticSize   NVARCHAR(400),
+    DollarPrice    DECIMAL(18, 0),
+    ExpirationDate NVARCHAR(160),
+    SkinType       NVARCHAR(200),
+    FOREIGN KEY (CategoryID) REFERENCES CosmeticCategory(CategoryID)
+);
+
